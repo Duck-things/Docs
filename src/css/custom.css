@@ -1,30 +1,67 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/* docs/.vitepress/theme/custom.css */
 
-/* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+/* MAIN PAGE TITLE ANIMATION */
+.VPHero .name {
+  background: linear-gradient(
+    90deg, 
+    #00a8cc 0%,
+    #7B61FF 33%,
+    #C21BFF 66%,
+    #00a8cc 100%  
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: supernova-slide 4s linear infinite;
+  
+  display: inline-block;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+/* Custom coloring for titles of info boxes */
+.custom-block.info .custom-block-title {
+  background: -webkit-linear-gradient(120deg, #41d1ff 30%, #3468fe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
 }
+
+/* Info block border color/gradient */
+.custom-block.info {
+  border: 2px solid transparent;
+  background-image:
+    linear-gradient(#fff, #fff),
+    linear-gradient(45deg, #42d392, #647eff, #42d392);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-size: 200% 200%;
+  animation: gradientMove 3s ease infinite;
+}
+/* Adjust fill and border for dark mode */
+.dark .custom-block.info {
+  background-image:
+    linear-gradient(#1e1e20, #1e1e20),
+    linear-gradient(45deg, #42d392, #647eff, #42d392);
+  
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.gradient-title-page {
+  color: #037BFC
+}
+
+/* Keyframe for main page gradient animation */
+@keyframes supernova-slide {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Keyframe for info box border animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
