@@ -80,3 +80,25 @@
   mask-repeat: no-repeat;
   mask-size: contain;
 }
+/* This targets the top navigation bar */
+.navbar {
+  background: linear-gradient(
+    90deg, 
+    #1212DE 0%,
+    #1278DE 33%,
+    #12DEDE 66%,
+    #00a8cc 100%
+  );
+}
+
+.navbar__link, .navbar__title {
+  color: white !important;
+}
+.navbar__item:hover, 
+.navbar__link:hover {
+  color: #fff !important; 
+  text-shadow: 0 0 8px #fff, 
+               0 0 15px #12DEDE, 
+               0 0 25px #12DEDE;
+  transition: text-shadow 0.3s ease-in-out;
+}
