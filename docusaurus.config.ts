@@ -17,7 +17,7 @@ const config: Config = {
   url: 'https://apexpathing.github.io',
 
   // Set the /<baseUrl>/ pathname under which your site is served
-  baseUrl: '/',
+  baseUrl: '/docs/',
 
   // GitHub pages deployment config.
   organizationName: 'Apex Pathing',
