@@ -88,7 +88,6 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/ApexPathing',
           className: 'navbar-githubl',
@@ -129,8 +128,6 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
             },
             {
               label: 'GitHub',
