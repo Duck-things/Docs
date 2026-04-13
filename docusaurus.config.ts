@@ -76,7 +76,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: 'ApexPathing',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -91,7 +91,7 @@ const config: Config = {
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/ApexPathing',
-          label: "github",
+          className: 'navbar-githubl',
           position: 'right',
         },
       ],
