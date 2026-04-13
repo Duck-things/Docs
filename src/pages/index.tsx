@@ -21,7 +21,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            ApexPathing Documentation/Github
           </Link>
         </div>
       </div>
