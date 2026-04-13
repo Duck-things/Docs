@@ -27,9 +27,9 @@ const config: Config = {
   deploymentBranch:'main',
   trailingSlash:false,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
+  // Even if you don't use inte nationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
@@ -102,8 +102,8 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/docs/intro',
+              label: 'Docs',
+              to: '/docs/docs/about',
             },
           ],
         },
@@ -127,8 +127,6 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            {
-            },
             {
               label: 'GitHub',
               href: 'https://github.com/ApexPathing/main',
